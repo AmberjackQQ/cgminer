@@ -24,7 +24,17 @@ cgminer程序的主要由以下几个模块组成：
   * SIGINT 程序终止(interrupt)信号, 在用户键入INTR字符(通常是Ctrl+C)时发出
   * SIGABRT 程序自己发现错误并调用abort时产生
   * SIGTERM 程序结束(terminate)信号, 与SIGKILL不同的是该信号可以被阻塞和处理. 通常用来要求程序自己正常退出. shell命令kill缺省产生这个信号.
-- 
+- 工作队列
+  * 创建获取工作队列tq_new()
+- 初始化USB设备
+- 当有benchmark 或者 benchfile 选项是
+-
+
+## 探测probe_pools
+
+
+## 有bitmain的?
+- 宏USE_BITMAIN_SOC ? 10414
 
 ## 项目编译环境
 - forked 源代码到我的github仓库
