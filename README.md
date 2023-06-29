@@ -36,7 +36,8 @@ cgminer程序的主要由以下几个模块组成：
   * 若有has_stratum, initiate_stratum, init_stratum_threads
   * 若没有has_stratum, curl_easy_init,
     * Probe for GBT support on first pass, GBT?
-    *  
+    * Detect if a http pool has an X-Stratum header at startup, and if so, switch to that in preference to gbt if it works
+
 
 ## 有bitmain的?
 - 宏USE_BITMAIN_SOC ? 10414
