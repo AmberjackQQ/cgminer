@@ -31,7 +31,12 @@ cgminer程序的主要由以下几个模块组成：
 -
 
 ## 探测probe_pools
-
+- 启动total_pools个线程，每个线程运行test_pool_thread函数
+- pool_active
+  * 若有has_stratum, initiate_stratum, init_stratum_threads
+  * 若没有has_stratum, curl_easy_init,
+    * Probe for GBT support on first pass, GBT?
+    *  
 
 ## 有bitmain的?
 - 宏USE_BITMAIN_SOC ? 10414
