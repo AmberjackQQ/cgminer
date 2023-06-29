@@ -41,6 +41,11 @@ cgminer程序的主要由以下几个模块组成：
 ## 有bitmain的?
 - 宏USE_BITMAIN_SOC ? 10414
 
+## stratum 协议
+- cgminer 向 server 注册
+- server 主动下发work给 cgminer
+- 
+
 ## 项目编译环境
 - forked 源代码到我的github仓库
 - git clone 代码到已有的开发环境是CentOS Linux release 8.4.2105
